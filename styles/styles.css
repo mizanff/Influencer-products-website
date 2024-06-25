@@ -41,7 +41,9 @@ nav a {
 /*banner section  */
 header {
     background-color: rgb(255, 255, 255);
-    background-image: url(../images/Circle\ design.svg);
+}
+#protfolio-img{
+    background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
 }
@@ -77,7 +79,7 @@ header {
 }
 
 /* sponsors-img */
-.sponsors-img-container{
+.sponsors-img-container {
     margin: 70px 150px;
     display: flex;
     justify-content: space-evenly;
@@ -87,33 +89,49 @@ header {
 
 /* card-section */
 
-.features-title{
+.card-container {
+    margin: 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card-content {
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.features-title {
     text-align: center;
     color: rgb(58, 58, 58);
     font-size: 1.75rem;
     font-weight: 600;
 }
 
+
+
 /* featured content */
 
-.container{
+.container {
     margin: 50px 160px;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 40px;
 }
 
-.img-container{
+.img-container {
     border-radius: 7px;
 }
 
-.featured-title{
+.featured-title {
     color: rgb(10, 8, 38);
     font-size: 2.30rem;
-    font-weight: 700;   
+    font-weight: 700;
 }
 
-.featured-description{
+.featured-description {
     color: rgb(108, 108, 108);
     font-size: 1rem;
     font-weight: 700;
@@ -121,29 +139,33 @@ header {
 
 /* footer section */
 
-.footer-section{
+.footer-section {
     background-color: black;
     text-align: center;
 }
 
-.footer-title{
+.Influencer-products {
+    padding: 20px 0px;
+}
+
+.footer-title {
     color: rgb(255, 255, 255);
     font-size: 1.50rem;
     font-weight: 700;
 }
 
-.footer-description{
+.footer-description {
     color: rgb(217, 219, 225);
     font-family: Manrope;
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-.footer-icon{
-    background-color: rgb(255, 255, 255);
+.footer-icon {
+    color: white;
 }
 
-.footer-icon a{
+.footer-icon a {
     padding: 16px;
 }
 
@@ -152,17 +174,39 @@ header {
 /* Mobile device */
 
 @media screen and (max-width: 576px) {
-    header{
+    #protfolio-img{
         background-image: none;
     }
-    nav > ul,
+
+    nav>ul,
     nav,
     .sponsors-img-container,
     .container,
-    .banner{
+    .banner {
         flex-direction: column;
     }
-    .banner .profile-pic{
+    nav,
+    nav ul{
+        padding: 0px;
+    }
+
+    nav li{
+        margin-left: 0px;
+    }
+    .banner{
+        padding: 0px;
+    }
+    .banner .profile-pic {
+        width: 80%;
+    }
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0px;
+    }
+    .card-content{
         width: 100%;
+        text-align: center;
     }
 }
