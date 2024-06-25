@@ -1,0 +1,168 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+/* header styles */
+
+.section-title {
+    color: rgb(58, 58, 58);
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+/*banner section  */
+header {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.banner {
+    display: flex;
+    padding: 20px 20px 5px 120px;
+    align-items: center;
+}
+
+.banner .profile-pic {
+    width: 500px;
+}
+
+.banner-title {
+    color: rgb(58, 58, 5);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: rgb(58, 58, 58);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text-primary {
+    border-radius: 41px;
+    background: rgb(224, 44, 109);
+    padding: 10px 20px 10px 20px;
+    border: 0;
+    color: rgb(255, 255, 255);
+}
+
+/* sponsors-img */
+.sponsors-img-container{
+    margin: 70px 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+/* card-section */
+
+.features-title{
+    text-align: center;
+    color: rgb(58, 58, 58);
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* featured content */
+
+.container{
+    margin: 50px 160px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.img-container{
+    border-radius: 7px;
+}
+
+.featured-title{
+    color: rgb(10, 8, 38);
+    font-size: 2.30rem;
+    font-weight: 700;   
+}
+
+.featured-description{
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* footer section */
+
+.footer-section{
+    background-color: black;
+    text-align: center;
+}
+
+.footer-title{
+    color: rgb(255, 255, 255);
+    font-size: 1.50rem;
+    font-weight: 700;
+}
+
+.footer-description{
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.footer-icon{
+    background-color: rgb(255, 255, 255);
+}
+
+.footer-icon a{
+    padding: 16px;
+}
+
+
+/* Responsive styles */
+/* Mobile device */
+
+@media screen and (max-width: 576px) {
+    header{
+        background-image: none;
+    }
+    nav > ul,
+    nav,
+    .sponsors-img-container,
+    .container,
+    .banner{
+        flex-direction: column;
+    }
+    .banner .profile-pic{
+        width: 100%;
+    }
+}
